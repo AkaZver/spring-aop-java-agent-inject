@@ -1,0 +1,6 @@
+<aspectj>
+    <aspects>
+        <aspect name="com.github.akazver.poc.SpringBootInterceptAspect"/>
+    </aspects>
+    <weaver options="-verbose -nowarn"/>
+</aspectj>

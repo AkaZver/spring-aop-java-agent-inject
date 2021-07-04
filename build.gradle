@@ -1,0 +1,22 @@
+plugins {
+    id 'io.freefair.aspectj' version '5.3.3.3'
+    id 'java'
+}
+
+group = 'com.github.akazver'
+version = '1.0.0'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.aspectj:aspectjrt:1.9.7'
+}
+
+jar {
+    manifest {
+        attributes 'PreMain-Class': 'com.github.akazver.poc.SpringAopJavaAgent'
+    }
+}
